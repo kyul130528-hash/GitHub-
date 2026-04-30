@@ -19,4 +19,8 @@ async def on_message(message):
         await message.channel.send("🎴 카드 뽑기 성공!")
 
 TOKEN = os.environ.get("DISCORD_TOKEN")
-client.run(e80dZ8ojjkzNV_9k2GpSK-sH-s_KeXb-)
+
+if TOKEN is None:
+    print("토큰 없음! Environment 설정 확인")
+else:
+    client.run(e80dZ8ojjkzNV_9k2GpSK-sH-s_KeXb-)

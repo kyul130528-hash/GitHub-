@@ -18,5 +18,5 @@ async def on_message(message):
     if message.content == "!뽑기":
         await message.channel.send("🎴 카드 뽑기 성공!")
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("5yvQ-AZRcsi5fvMQ_0I3a1UV7apkuBGR")
 client.run(5yvQ-AZRcsi5fvMQ_0I3a1UV7apkuBGR)

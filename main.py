@@ -8,7 +8,7 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print(f"로그인됨: {client.user}")
+    print("봇 실행됨!")
 
 @client.event
 async def on_message(message):
@@ -18,5 +18,4 @@ async def on_message(message):
     if message.content == "!뽑기":
         await message.channel.send("🎴 카드 뽑기 성공!")
 
-TOKEN = os.getenv("5yvQ-AZRcsi5fvMQ_0I3a1UV7apkuBGR")
-client.run(5yvQ-AZRcsi5fvMQ_0I3a1UV7apkuBGR)
+client.run(os.environ["5yvQ-AZRcsi5fvMQ_0I3a1UV7apkuBGR"])
